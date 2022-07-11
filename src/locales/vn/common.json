@@ -1,0 +1,6 @@
+{
+  "greetings": "Assalamu'alaikum. delpi <b>{{version}}</b>",
+  "controls": {
+    "change-language": "Change language"
+  }
+}

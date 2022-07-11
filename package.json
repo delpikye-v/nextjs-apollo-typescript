@@ -1,0 +1,44 @@
+{
+  "name": "nextjs-apollo-ts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "nextjs, apollo/graphql, gencode, typescript... (for develop web)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "gen:types": "apollo client:codegen --target=typescript --outputFlat src/graphql/__types --excludes **/__types --includes **/*.graphql.ts",
+    "gen:types2": "apollo client:codegen --endpoint=https://api.spacex.land/graphql --target=typescript --outputFlat src/graphql/__types --excludes **/__types --includes **/*.graphql.ts"
+  },
+  "dependencies": {
+    "@apollo/client": "3.5.10",
+    "apollo-link-context": "1.0.20",
+    "cookie": "0.5.0",
+    "graphql-tag": "2.12.6",
+    "i18next": "21.6.16",
+    "i18next-resources-to-backend": "1.0.0",
+    "lodash.isequal": "4.5.0",
+    "module-alias": "^2.2.2",
+    "next": "12.1.5",
+    "normalize.css": "8.0.1",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-i18next": "11.16.7",
+    "react-loading-skeleton": "^3.1.0",
+    "react-perfect-scrollbar-z": "^1.2.3",
+    "react-use-query-timeout": "^2.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.16.4",
+    "@testing-library/react": "13.1.1",
+    "@types/cookie": "0.5.0",
+    "@types/jest": "27.4.1",
+    "@types/lodash.isequal": "4.5.6",
+    "@types/react": "18.0.5",
+    "apollo": "^2.33.9",
+    "jest": "27.5.1",
+    "prettier": "2.6.2",
+    "typescript": "4.6.3"
+  }
+}
